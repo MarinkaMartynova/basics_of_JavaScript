@@ -16,14 +16,14 @@
 
 const dayNumber = Number(prompt('Введите целое число в интервале [1, 32) '));
 if (dayNumber >= 1 && dayNumber < 32) {
-    const N1 = dayNumber;
-    const N2 = 1;
-    if (N1 < 11) {
-        alert(`Число ${N1} попадает в ${N2} декаду месяца.`);
-    } else if (N1 < 21 && N1 >= 11) {
-        alert(`Число ${N1} попадает в ${N2 + 1} декаду месяца.`);    
+    const enteredNum = dayNumber;
+    const decadNum = 1;
+    if (enteredNum < 11) {
+        alert(`Число ${enteredNum} попадает в ${decadNum} декаду месяца.`);
+    } else if (enteredNum < 21 && enteredNum >= 11) {
+        alert(`Число ${enteredNum} попадает в ${decadNum + 1} декаду месяца.`);    
     }
-    alert(`Число ${N1} попадает в ${N2 + 2} декаду месяца.`);
+    alert(`Число ${enteredNum} попадает в ${decadNum + 2} декаду месяца.`);
 } else {
-    alert('Неверное значение')
+    alert('Неверное значение');
 }

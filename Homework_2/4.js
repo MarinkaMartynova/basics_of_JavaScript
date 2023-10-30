@@ -25,7 +25,7 @@
 
 
 const wholeNumber = Number(prompt('Введите целое число'));
-const hundreds = Math.floor(wholeNumber / 100);
-const tens = Math.floor((wholeNumber % 100) / 10);
-const ones = wholeNumber % 10;
+const hundreds = Math.trunc(wholeNumber / 100) % 10;         //сотни
+const tens = Math.trunc(wholeNumber / 10) % 10;      // десятки
+const ones = wholeNumber % 10;                         //единицы
 alert(`В числе ${wholeNumber} количество сотен: ${hundreds}, десятков: ${tens}, единиц: ${ones}`);
