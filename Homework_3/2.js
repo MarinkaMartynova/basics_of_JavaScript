@@ -10,15 +10,13 @@
 */
 
 function netSalary(salary) {
-    return salary / 100 * 87;
+    return Math.trunc(salary / 100 * 87 * 100) / 100;    
 }
 
-const salary = prompt('Введите ваш оклад: ');
+const salary = Number(prompt('Введите ваш оклад: '));
 
-if (isNaN(salary)) {                          
-    alert('Значение задано неверно');
-        
+if (Number.isNaN(salary)) {                          
+    alert('Значение задано неверно');        
 } else {
     alert(`Размер заработной платы за вычетом налогов равен ${netSalary(salary)}.`);
-
 }

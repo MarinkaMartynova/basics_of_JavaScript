@@ -9,8 +9,8 @@
 
 /**
  * функция возведения в куб
- * @param {Number} num 
- * @returns {Number} число в кубе
+ * @param {number} num 
+ * @returns {number} число в кубе
  */
 const cubing = function (num) {          
     // return Math.pow(num, 3); 

@@ -14,9 +14,9 @@ function findMax(num1, num2, num3) {
     return Math.max(num1, num2, num3);
 }
 
-const num1 = prompt('Введите первое число: ');
-const num2 = prompt('Введите второе число: ');  
-const num3 = prompt('Введите третье число: '); 
+const num1 = Number(prompt('Введите первое число: '));
+const num2 = Number(prompt('Введите второе число: '));  
+const num3 = Number(prompt('Введите третье число: ')); 
 const maxOfNum = findMax(num1, num2, num3);
 
 alert(`Максимальное значение среди чисел ${num1}, ${num2}, ${num3} равно ${maxOfNum}.`);
