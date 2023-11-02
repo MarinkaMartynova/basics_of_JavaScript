@@ -37,9 +37,9 @@ function multiplicationNumbers(num1, num2) {
 function divisionNumbers(num1, num2) {
     if (num1 >= num2) {
         return num1 / num2;
-    } else {
-        return num2 / num1;
     }
+    return num2 / num1;
+    
 }
 
 const num1 = Math.trunc(Math.random() * 10);    //рандомное значение от 0 до 10 (10 не вкл)
