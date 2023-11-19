@@ -22,7 +22,7 @@
 //   }
 // }
 
-const array = (number) => {
+const oddsEvensNum = (number) => {
    if (number === 0) {
       return `${number} – это ноль`;
    } else if (number % 2 === 0) {
@@ -32,5 +32,5 @@ const array = (number) => {
    }
 }
 for (let i = 0; i <= 10; i++) {
-    console.log(array(i));
+    console.log(oddsEvensNum(i));
 }

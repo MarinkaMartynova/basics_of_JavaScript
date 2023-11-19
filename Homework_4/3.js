@@ -29,11 +29,11 @@ for (let i = 0; i < arr.length; i++) {
 
 console.log(sum + ' - Суммa элементов массива');
 
-let min = Math.min(...arr);
+const min = Math.min(...arr);
 console.log(min + ' - Минимальное значение в массиве');
 
 
-let indexArray = [];
+const indexArray = [];
 
 for (let i = 0; i < arr.length; i++) {
   if (arr[i] === 3) {
